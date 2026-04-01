@@ -1,16 +1,54 @@
-# React + Vite
+# M4K Gang — DevSecOps Grupprapport
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*10 veckor. 4 personer. Från första commit till fullständig pipeline.*
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+M4K Gang är en portfolio-hemsida som dokumenterar vår resa genom Chas Academys DevSecOps-kurs. Sidan fungerar som grupprapport och visar vad vi byggde, hur vi jobbade och vad vi lärde oss — vecka för vecka. Allt från CI/CD och Kubernetes till Terraform, container hardening och säkerhetsanalys. Hemsidan är byggd för att kunna visas för en arbetsgivare vid LIA-ansökan.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Sidan
 
-## Expanding the ESLint configuration
+- **Hem** — Teamet, nyckeltal och achievements
+- **Vår resa** — Interaktiv tidslinje vecka 1–10
+- **Teknisk** — Pipeline-diagram och 7 tekniska djupdykningar
+- **Before & After** — CyberPass vecka 1 vs M4K-Pipeline vecka 10
+- **Team & SRE** — Roller, arbetssätt, postmortems och support tickets
+- **Reflektioner** — Vad vi lärde oss och hur vi täcker kursmålen
+- **Data** — Dashboard med närvaro, submissions, logins och poäng
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Teamet
+
+| Namn | Roll |
+|------|------|
+| Carl Persson | Systemarkitekten |
+| Jonny Nguyen | Automationsspecialisten |
+| Julia Persson | Säkerhetsanalytikern |
+| Mattej Petrovic | Teamleader & Integratören |
+
+---
+
+## Kursmål
+
+Rapporten täcker följande kursmål:
+
+1. Shared Responsibility-modellen
+4. SRE-metodik och systemresiliens
+8. Chaos Engineering
+10. Bedömning av molnarkitektur
+11. Incidentrespons och post-mortem
+
+---
+
+## Länkar
+
+- 🌐 Live: [m4k-reflect.vercel.app](https://m4k-reflect.vercel.app)
+- 📦 Pipeline-repo: [M4K-Pipeline](https://github.com/Mattej-Petrovic/M4K-Pipeline)
+- 🔐 CyberPass: [CyberPass](https://github.com/Mattej-Petrovic/CyberPass)
+
+---
+
+*Chas Academy — IT och Cybersäkerhetstekniker — DevSecOps 2026*
