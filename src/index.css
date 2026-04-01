@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  /* Palette — Ethereal Glass */
+  --color-bg:         #050608;
+  --color-bg-subtle:  #0a0c10;
+  --color-surface:    rgba(255,255,255,0.04);
+  --color-border:     rgba(255,255,255,0.08);
+  --color-border-hi:  rgba(255,255,255,0.15);
+  --color-text:       #e8eaf0;
+  --color-text-muted: rgba(232,234,240,0.45);
+  --color-accent:     #34d399;
+  --color-accent-alt: #22d3ee;
+  --color-accent-dim: rgba(52,211,153,0.15);
+
+  --font-sans: 'Geist', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  --ease-spring:   cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+/* Radial mesh — fixed, GPU safe */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 10%, rgba(52,211,153,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 80% 80%, rgba(34,211,238,0.05) 0%, transparent 70%);
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* Scrollbar — Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(52,211,153,0.45) rgba(255,255,255,0.04);
+}
+
+/* Scrollbar — WebKit */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.04);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(52,211,153,0.45);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(52,211,153,0.75);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Header-box button hover */
+a:hover .visa-live-muted {
+  background: rgba(255,255,255,0.15);
+  transform: scale(1.03);
+}
+a:hover .visa-live-accent {
+  background: #5ee8b0;
+  transform: scale(1.03);
+}
