@@ -140,7 +140,7 @@ export default function Team() {
       {/* ── Header ── */}
       <section>
         <div ref={headerRef}>
-          <Eyebrow>Team & SRE · Kursmål 4 & 11</Eyebrow>
+          <Eyebrow>Team & SRE</Eyebrow>
           <h1
             style={{
               fontFamily: 'var(--font-sans)',
